@@ -23,7 +23,8 @@
         <class className="TRViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TRViewController.h"/>
             <relationships>
-                <relationship kind="action" name="swipeTieRight:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="handlePinch:" candidateClass="UIPinchGestureRecognizer"/>
+                <relationship kind="action" name="handleRotate:" candidateClass="UIRotationGestureRecognizer"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="tieImageView" candidateClass="UIImageView"/>
             </relationships>

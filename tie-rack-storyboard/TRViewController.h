@@ -10,13 +10,17 @@
 #import <CoreMedia/CoreMedia.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface TRViewController : UIViewController
+@interface TRViewController : UIViewController <UIGestureRecognizerDelegate>
 
 @property (strong, nonatomic) AVCaptureVideoPreviewLayer *previewLayer;
 @property (strong, nonatomic) AVCaptureSession *captureSession;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *tieImageView;
-//@property (weak, nonatomic) UIImageView *nextView;
+
+@property (strong, nonatomic) NSMutableArray *tiesToDisplay;
+
+- (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer;
+- (IBAction)handleRotate:(UIRotationGestureRecognizer *)recognizer;
 
 @end

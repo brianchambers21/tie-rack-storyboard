@@ -13,11 +13,18 @@
 		1615B24A17A853E10013F5C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1615B24817A853E10013F5C2 /* InfoPlist.strings */; };
 		1615B24C17A853E10013F5C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615B24B17A853E10013F5C2 /* main.m */; };
 		1615B25017A853E10013F5C2 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615B24F17A853E10013F5C2 /* TRAppDelegate.m */; };
-		1615B25217A853E10013F5C2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1615B25117A853E10013F5C2 /* Default.png */; };
-		1615B25417A853E10013F5C2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1615B25317A853E10013F5C2 /* Default@2x.png */; };
-		1615B25617A853E10013F5C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1615B25517A853E10013F5C2 /* Default-568h@2x.png */; };
 		1615B25917A853E10013F5C2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1615B25717A853E10013F5C2 /* MainStoryboard.storyboard */; };
 		1615B25C17A853E10013F5C2 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615B25B17A853E10013F5C2 /* TRViewController.m */; };
+		161AE08117CB0F21007B3363 /* TRTieImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161AE08017CB0F21007B3363 /* TRTieImageView.m */; };
+		1656C50817C27B0A0064AAC9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1656C50717C27B0A0064AAC9 /* CoreMedia.framework */; };
+		1656C50A17C27B120064AAC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1656C50917C27B120064AAC9 /* AVFoundation.framework */; };
+		16D7436F17B86BDD00F01AE7 /* leadercast.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7436D17B86BDD00F01AE7 /* leadercast.png */; };
+		16D7437017B86BDD00F01AE7 /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7436E17B86BDD00F01AE7 /* usa.png */; };
+		16D7437717B948BF00F01AE7 /* TieRack-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7437617B948BF00F01AE7 /* TieRack-114.png */; };
+		16D7437917B948D000F01AE7 /* TieRack-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7437817B948D000F01AE7 /* TieRack-57.png */; };
+		16D7437D17B94A3300F01AE7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7437A17B94A3300F01AE7 /* Default-568h@2x.png */; };
+		16D7437E17B94A3300F01AE7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7437B17B94A3300F01AE7 /* Default.png */; };
+		16D7437F17B94A3300F01AE7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7437C17B94A3300F01AE7 /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +38,20 @@
 		1615B24D17A853E10013F5C2 /* tie-rack-storyboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tie-rack-storyboard-Prefix.pch"; sourceTree = "<group>"; };
 		1615B24E17A853E10013F5C2 /* TRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRAppDelegate.h; sourceTree = "<group>"; };
 		1615B24F17A853E10013F5C2 /* TRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRAppDelegate.m; sourceTree = "<group>"; };
-		1615B25117A853E10013F5C2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		1615B25317A853E10013F5C2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		1615B25517A853E10013F5C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1615B25817A853E10013F5C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1615B25A17A853E10013F5C2 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
 		1615B25B17A853E10013F5C2 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		161AE07F17CB0F21007B3363 /* TRTieImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTieImageView.h; sourceTree = "<group>"; };
+		161AE08017CB0F21007B3363 /* TRTieImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTieImageView.m; sourceTree = "<group>"; };
+		1656C50717C27B0A0064AAC9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1656C50917C27B120064AAC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		16D7436D17B86BDD00F01AE7 /* leadercast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leadercast.png; sourceTree = "<group>"; };
+		16D7436E17B86BDD00F01AE7 /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
+		16D7437617B948BF00F01AE7 /* TieRack-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TieRack-114.png"; path = "../TieRack-114.png"; sourceTree = "<group>"; };
+		16D7437817B948D000F01AE7 /* TieRack-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TieRack-57.png"; path = "../TieRack-57.png"; sourceTree = "<group>"; };
+		16D7437A17B94A3300F01AE7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../tie-rack-trunk/Default-568h@2x.png"; sourceTree = "<group>"; };
+		16D7437B17B94A3300F01AE7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../../tie-rack-trunk/Default.png"; sourceTree = "<group>"; };
+		16D7437C17B94A3300F01AE7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../tie-rack-trunk/Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1656C50A17C27B120064AAC9 /* AVFoundation.framework in Frameworks */,
+				1656C50817C27B0A0064AAC9 /* CoreMedia.framework in Frameworks */,
 				1615B24017A853E10013F5C2 /* UIKit.framework in Frameworks */,
 				1615B24217A853E10013F5C2 /* Foundation.framework in Frameworks */,
 				1615B24417A853E10013F5C2 /* CoreGraphics.framework in Frameworks */,
@@ -83,9 +100,13 @@
 		1615B24517A853E10013F5C2 /* tie-rack-storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				1656C50917C27B120064AAC9 /* AVFoundation.framework */,
+				1656C50717C27B0A0064AAC9 /* CoreMedia.framework */,
+				1615B25717A853E10013F5C2 /* MainStoryboard.storyboard */,
+				161AE07F17CB0F21007B3363 /* TRTieImageView.h */,
+				161AE08017CB0F21007B3363 /* TRTieImageView.m */,
 				1615B24E17A853E10013F5C2 /* TRAppDelegate.h */,
 				1615B24F17A853E10013F5C2 /* TRAppDelegate.m */,
-				1615B25717A853E10013F5C2 /* MainStoryboard.storyboard */,
 				1615B25A17A853E10013F5C2 /* TRViewController.h */,
 				1615B25B17A853E10013F5C2 /* TRViewController.m */,
 				1615B24617A853E10013F5C2 /* Supporting Files */,
@@ -96,15 +117,27 @@
 		1615B24617A853E10013F5C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16D7437A17B94A3300F01AE7 /* Default-568h@2x.png */,
+				16D7437B17B94A3300F01AE7 /* Default.png */,
+				16D7437C17B94A3300F01AE7 /* Default@2x.png */,
+				16D7437817B948D000F01AE7 /* TieRack-57.png */,
+				16D7437617B948BF00F01AE7 /* TieRack-114.png */,
+				16D7437517B9486400F01AE7 /* Images */,
 				1615B24717A853E10013F5C2 /* tie-rack-storyboard-Info.plist */,
 				1615B24817A853E10013F5C2 /* InfoPlist.strings */,
 				1615B24B17A853E10013F5C2 /* main.m */,
 				1615B24D17A853E10013F5C2 /* tie-rack-storyboard-Prefix.pch */,
-				1615B25117A853E10013F5C2 /* Default.png */,
-				1615B25317A853E10013F5C2 /* Default@2x.png */,
-				1615B25517A853E10013F5C2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16D7437517B9486400F01AE7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				16D7436E17B86BDD00F01AE7 /* usa.png */,
+				16D7436D17B86BDD00F01AE7 /* leadercast.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,10 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1615B24A17A853E10013F5C2 /* InfoPlist.strings in Resources */,
-				1615B25217A853E10013F5C2 /* Default.png in Resources */,
-				1615B25417A853E10013F5C2 /* Default@2x.png in Resources */,
-				1615B25617A853E10013F5C2 /* Default-568h@2x.png in Resources */,
 				1615B25917A853E10013F5C2 /* MainStoryboard.storyboard in Resources */,
+				16D7436F17B86BDD00F01AE7 /* leadercast.png in Resources */,
+				16D7437017B86BDD00F01AE7 /* usa.png in Resources */,
+				16D7437717B948BF00F01AE7 /* TieRack-114.png in Resources */,
+				16D7437917B948D000F01AE7 /* TieRack-57.png in Resources */,
+				16D7437D17B94A3300F01AE7 /* Default-568h@2x.png in Resources */,
+				16D7437E17B94A3300F01AE7 /* Default.png in Resources */,
+				16D7437F17B94A3300F01AE7 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +214,7 @@
 				1615B24C17A853E10013F5C2 /* main.m in Sources */,
 				1615B25017A853E10013F5C2 /* TRAppDelegate.m in Sources */,
 				1615B25C17A853E10013F5C2 /* TRViewController.m in Sources */,
+				161AE08117CB0F21007B3363 /* TRTieImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +265,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -251,7 +289,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -261,6 +299,7 @@
 		1615B26017A853E10013F5C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tie-rack-storyboard/tie-rack-storyboard-Prefix.pch";
 				INFOPLIST_FILE = "tie-rack-storyboard/tie-rack-storyboard-Info.plist";
@@ -299,6 +338,7 @@
 				1615B26117A853E10013F5C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
