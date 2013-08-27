@@ -7,10 +7,13 @@
 //
 
 #import "TRViewController.h"
+#import "TRTieImageScrollView.h"
 
 @interface TRViewController ()
 @property (strong,nonatomic) UIButton *captureImageButton;
 @property (nonatomic) BOOL userIsRepositioningTie;
+@property (nonatomic, strong) IBOutlet UITapGestureRecognizer *doubleTapGestureRecognizer;
+
 @end
 
 @implementation TRViewController
@@ -35,7 +38,10 @@
     NSMutableArray *rackOfTies = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"leadercast.png"], [UIImage imageNamed:@"usa.png"], [UIImage imageNamed:@"leadercast.png"], [UIImage imageNamed:@"usa.png"],nil];
     
     //create the scroll view
-    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    //******  OVERRIDE THE UIScrollView alloc init with my custom scroll view subclass *********
+    //UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    UIScrollView *scroll = [[TRTieImageScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    
     scroll.pagingEnabled = YES;
     
     //sets the background color on the view to clear so that you do not see white scaling in and out, prepares for camera.
@@ -52,13 +58,14 @@
         [imageView setFrame:CGRectMake(xOrigin + awesomeView.frame.size.width/4, awesomeView.frame.size.height/3, awesomeView.frame.size.width/2, awesomeView.frame.size.height/2)];
         [imageView setBackgroundColor:[UIColor clearColor]];
         
-        [scroll addSubview:awesomeView];
         [awesomeView addSubview:imageView];
+        [scroll addSubview:awesomeView];
         
         }
     
     scroll.contentSize = CGSizeMake(self.view.frame.size.width * [rackOfTies count], self.view.frame.size.height);
     [self.view addSubview:scroll];
+    [scroll setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.1]];
     
     //ensure that the scroll view does not start showing scroll bars on zoom
     [scroll setShowsHorizontalScrollIndicator:NO];
@@ -87,26 +94,29 @@
     rotateRecognizer.delegate = self;
     [scroll addGestureRecognizer:rotateRecognizer];
     
-    //create a double tap gesture recognizer to allow repositioning the tie
-    UITapGestureRecognizer *tripleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTripleTap:)];
-    tripleTapGestureRecognizer.numberOfTapsRequired = 3;
-    [scroll addGestureRecognizer:tripleTapGestureRecognizer];
-    
+    /*//create a double tap gesture recognizer to allow repositioning the tie
     UITapGestureRecognizer *doubleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
     doubleTapGestureRecognizer.numberOfTapsRequired = 2;
     [scroll addGestureRecognizer:doubleTapGestureRecognizer];
+     */
     
-    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureCaptured:)];
+    /*UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGestureCaptured:)];
     //singleTapGestureRecognizer.cancelsTouchesInView = NO;
     singleTapGestureRecognizer.numberOfTapsRequired = 1;
-    [scroll addGestureRecognizer:singleTapGestureRecognizer];
+    [scroll addGestureRecognizer:singleTapGestureRecognizer];*/
 
+    [scroll becomeFirstResponder];
     
     [self fireUpCamera];
 }
 
 
-
+/*
+- (void)highlightImage:(UIColor *)color withBorder:(NSInteger)border {
+    imageView.layer.borderColor = [UIColor redColor].CGColor;
+    view.layer.borderWidth = 3.0f;
+}
+*/
 
 - (IBAction)captureAndSaveImage {
     NSLog(@"Button Pressed");
@@ -163,28 +173,15 @@
     recognizer.rotation = 0;
 }
 
-- (IBAction)handleTripleTap:(UITapGestureRecognizer *)recognizer {
-    NSLog(@"Double tap");
-    if (!self.userIsRepositioningTie) self.userIsRepositioningTie=YES;
-    //allow the user to reposition the UIImageView within the bounds of the current awesome view in the scroll view
+
+/*- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)recognizer {
+    
+    
+    //see if user is in moving model
+    NSLog(@"Resetting tie to new position");
     
 }
-
-- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)recognizer {
-    
-    //see if user is in moving mode
-    if (self.userIsRepositioningTie) {
-        NSLog(@"Resetting tie to new position");
-
-        //replace the UIImageView at current location
-    self.userIsRepositioningTie=NO;
-    }
-}
-
-
-//after tripple tap, we want to disable scrolling until a double tap occurs
-
-
+*/
 
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {

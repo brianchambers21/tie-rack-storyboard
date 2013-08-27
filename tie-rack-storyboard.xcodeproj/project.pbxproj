@@ -15,9 +15,10 @@
 		1615B25017A853E10013F5C2 /* TRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615B24F17A853E10013F5C2 /* TRAppDelegate.m */; };
 		1615B25917A853E10013F5C2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1615B25717A853E10013F5C2 /* MainStoryboard.storyboard */; };
 		1615B25C17A853E10013F5C2 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1615B25B17A853E10013F5C2 /* TRViewController.m */; };
-		161AE08117CB0F21007B3363 /* TRTieImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161AE08017CB0F21007B3363 /* TRTieImageView.m */; };
+		161AE08117CB0F21007B3363 /* TRTieImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 161AE08017CB0F21007B3363 /* TRTieImageScrollView.m */; };
 		1656C50817C27B0A0064AAC9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1656C50717C27B0A0064AAC9 /* CoreMedia.framework */; };
 		1656C50A17C27B120064AAC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1656C50917C27B120064AAC9 /* AVFoundation.framework */; };
+		16C5406B17CBDC0F004A6181 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C5406A17CBDC0F004A6181 /* QuartzCore.framework */; };
 		16D7436F17B86BDD00F01AE7 /* leadercast.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7436D17B86BDD00F01AE7 /* leadercast.png */; };
 		16D7437017B86BDD00F01AE7 /* usa.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7436E17B86BDD00F01AE7 /* usa.png */; };
 		16D7437717B948BF00F01AE7 /* TieRack-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D7437617B948BF00F01AE7 /* TieRack-114.png */; };
@@ -41,10 +42,11 @@
 		1615B25817A853E10013F5C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1615B25A17A853E10013F5C2 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
 		1615B25B17A853E10013F5C2 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
-		161AE07F17CB0F21007B3363 /* TRTieImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTieImageView.h; sourceTree = "<group>"; };
-		161AE08017CB0F21007B3363 /* TRTieImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTieImageView.m; sourceTree = "<group>"; };
+		161AE07F17CB0F21007B3363 /* TRTieImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRTieImageScrollView.h; sourceTree = "<group>"; };
+		161AE08017CB0F21007B3363 /* TRTieImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRTieImageScrollView.m; sourceTree = "<group>"; };
 		1656C50717C27B0A0064AAC9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		1656C50917C27B120064AAC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		16C5406A17CBDC0F004A6181 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		16D7436D17B86BDD00F01AE7 /* leadercast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leadercast.png; sourceTree = "<group>"; };
 		16D7436E17B86BDD00F01AE7 /* usa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usa.png; sourceTree = "<group>"; };
 		16D7437617B948BF00F01AE7 /* TieRack-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TieRack-114.png"; path = "../TieRack-114.png"; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16C5406B17CBDC0F004A6181 /* QuartzCore.framework in Frameworks */,
 				1656C50A17C27B120064AAC9 /* AVFoundation.framework in Frameworks */,
 				1656C50817C27B0A0064AAC9 /* CoreMedia.framework in Frameworks */,
 				1615B24017A853E10013F5C2 /* UIKit.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		1615B23317A853E10013F5C2 = {
 			isa = PBXGroup;
 			children = (
+				16C5406A17CBDC0F004A6181 /* QuartzCore.framework */,
 				1615B24517A853E10013F5C2 /* tie-rack-storyboard */,
 				1615B23E17A853E10013F5C2 /* Frameworks */,
 				1615B23D17A853E10013F5C2 /* Products */,
@@ -103,8 +107,8 @@
 				1656C50917C27B120064AAC9 /* AVFoundation.framework */,
 				1656C50717C27B0A0064AAC9 /* CoreMedia.framework */,
 				1615B25717A853E10013F5C2 /* MainStoryboard.storyboard */,
-				161AE07F17CB0F21007B3363 /* TRTieImageView.h */,
-				161AE08017CB0F21007B3363 /* TRTieImageView.m */,
+				161AE07F17CB0F21007B3363 /* TRTieImageScrollView.h */,
+				161AE08017CB0F21007B3363 /* TRTieImageScrollView.m */,
 				1615B24E17A853E10013F5C2 /* TRAppDelegate.h */,
 				1615B24F17A853E10013F5C2 /* TRAppDelegate.m */,
 				1615B25A17A853E10013F5C2 /* TRViewController.h */,
@@ -214,7 +218,7 @@
 				1615B24C17A853E10013F5C2 /* main.m in Sources */,
 				1615B25017A853E10013F5C2 /* TRAppDelegate.m in Sources */,
 				1615B25C17A853E10013F5C2 /* TRViewController.m in Sources */,
-				161AE08117CB0F21007B3363 /* TRTieImageView.m in Sources */,
+				161AE08117CB0F21007B3363 /* TRTieImageScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

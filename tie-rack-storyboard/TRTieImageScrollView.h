@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRTieImageView : UIView
-@property (strong,nonatomic) UIScrollView *scroll;
+@interface TRTieImageScrollView : UIScrollView
+
 @end
